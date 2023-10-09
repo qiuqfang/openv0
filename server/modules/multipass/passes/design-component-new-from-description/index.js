@@ -8,6 +8,7 @@ const { OpenAI } = require("openai");
 require("dotenv").config();
 const path = require("path");
 const openai = new OpenAI({
+  baseURL: "https://api.chatanywhere.com.cn",
   apiKey: process.env.OPENAI_API_KEY,
 });
 

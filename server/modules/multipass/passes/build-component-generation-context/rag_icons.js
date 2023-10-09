@@ -5,6 +5,7 @@ const { LocalIndex } = require(`vectra`);
 const { OpenAI } = require("openai");
 require("dotenv").config();
 const openai = new OpenAI({
+  baseURL: "https://api.chatanywhere.com.cn",
   apiKey: process.env.OPENAI_API_KEY,
 });
 
